@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,11 +35,14 @@ public class MainActivity extends AppCompatActivity {
         //To execute the SQL query
         sd.execSQL(createQuery);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        //remove view compact to remove padding restriction
+        /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-        });
+        });*/
+
+
         //initialize the fields from UI widgets
         btn_AddTask = findViewById(R.id.btn_AddTask);
         btn_EditTask = findViewById(R.id.btn_EditTask);
@@ -56,18 +60,16 @@ public class MainActivity extends AppCompatActivity {
                 String TaskName = et_TaskName.getText().toString();
                 String TaskDesc = et_TaskDesc.getText().toString();
                 //insert add task
-                String insertTask = "INSERT INTO todo VALUES ('"+et_TaskName+"','"+et_TaskDesc+"')";
+                String insertTask = "INSERT INTO todo VALUES ('"+TaskName+"','"+TaskDesc+"')";
                 //to execute SQL query
                 sd.execSQL(insertTask);
-                //view the data
-                Cursor cursor = sd.rawQuery("SELECT * FROM todo",null);
-                //To pass the data into TextView
-                //Since data length is unknown hence while loop is used
-                while (cursor.moveToNext())
-                {
-                    //to append the todo data into text view
-                    tv_todo.append(cursor.getString(0)+'\n'+cursor.getString(1)+'\n');
-                }
+                Toast.makeText(MainActivity.this,
+                        "Task Added", Toast.LENGTH_SHORT).show();
+                //To clear form
+                et_TaskName.setText("");
+                et_TaskDesc.setText(""); //empty string == cleared data
+
+
             }
         });
         btn_EditTask.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +88,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //view task
+                //view the data
+                Cursor cursor = sd.rawQuery("SELECT * FROM todo",null);
+                //To pass the data into TextView
+                //Since data length is unknown hence while loop is used
+                while (cursor.moveToNext())
+                {
+                    //to append the todo data into text view
+                    tv_todo.append(cursor.getString(0)+'\n'+cursor.getString(1)+'\n');
+                }
             }
         });
     }

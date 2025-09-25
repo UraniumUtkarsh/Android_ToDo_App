@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="50dp">
 
    <EditText
        android:layout_width="match_parent"
@@ -21,22 +22,22 @@
         android:lines="5"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Task"
         android:id="@+id/btn_AddTask"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edit Task"
         android:id="@+id/btn_EditTask"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="View Task"
         android:id="@+id/btn_ViewTask"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Delete Task"
         android:id="@+id/btn_DeleteTask"/>
@@ -44,4 +45,8 @@
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:id="@+id/tv_todo"/>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="0.2dp"
+     android:background='#000'/>
 </LinearLayout>
