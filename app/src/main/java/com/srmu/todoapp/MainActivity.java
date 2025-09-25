@@ -1,5 +1,6 @@
 package com.srmu.todoapp;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -76,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //edit task
+                Intent play = new Intent(
+                        MainActivity.this,MyService.class
+                );
+                startService(play);
             }
         });
         btn_DeleteTask.setOnClickListener(new View.OnClickListener() {

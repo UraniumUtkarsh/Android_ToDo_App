@@ -2,9 +2,11 @@ package com.srmu.todoapp;
 
 import android.app.Service;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.IBinder;
 
 public class MyService extends Service {
+    MediaPlayer mediaPlayer;
     public MyService() {
     }
 
@@ -12,5 +14,19 @@ public class MyService extends Service {
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //to attach the music
+        mediaPlayer = MediaPlayer.create(this,R.raw.song)
+    }
+
+    @Override
+    public void onStart(Intent intent, int startId) {
+        super.onStart(intent, startId);
+        //to start the music
+        mediaPlayer.start();
     }
 }
