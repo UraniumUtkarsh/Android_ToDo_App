@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
    <EditText
@@ -39,4 +40,8 @@
         android:layout_height="wrap_content"
         android:text="Delete Task"
         android:id="@+id/btn_DeleteTask"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/tv_todo"/>
 </LinearLayout>
