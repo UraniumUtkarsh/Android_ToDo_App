@@ -20,7 +20,7 @@ public class MyService extends Service {
     public void onCreate() {
         super.onCreate();
         //to attach the music
-        mediaPlayer = MediaPlayer.create(this,R.raw.song)
+        mediaPlayer = MediaPlayer.create(this,R.raw.song);
     }
 
     @Override

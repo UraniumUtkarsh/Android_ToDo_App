@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //delete task
+                
             }
         });
         btn_ViewTask.setOnClickListener(new View.OnClickListener() {
