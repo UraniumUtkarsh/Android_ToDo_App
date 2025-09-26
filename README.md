@@ -20,7 +20,7 @@ This app allows users to \*\*Add\*\*, \*\*Edit\*\*, \*\*View\*\*, and \*\*Delete
 
 |------------|-------------|
 
-| <img src="1000052201.png" width="300"/> | <img src="1000052202.png" width="300"/> |
+| <img src="Github_app_img_ss/img1.png" width="300"/> | <img src="Github_app_img_ss/img2.png" width="300"/> |
 
 
 
