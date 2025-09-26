@@ -20,7 +20,7 @@ This app allows users to \*\*Add\*\*, \*\*Edit\*\*, \*\*View\*\*, and \*\*Delete
 
 |------------|-------------|
 
-| <img src="Github_app_img_ss/img1.png" width="300"/> | <img src="Github_app_img_ss/img2.png" width="300"/> |
+| <img src="https://github.com/UraniumUtkarsh/Android_ToDo_App/blob/main/Github_app_img_ss/img1.jpg" width="300"/> | <img src="https://github.com/UraniumUtkarsh/Android_ToDo_App/blob/main/Github_app_img_ss/img2.png" width="300"/> |
 
 
 
