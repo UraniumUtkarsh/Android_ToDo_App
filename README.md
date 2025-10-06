@@ -84,12 +84,19 @@ Make sure you have:
 <details>
 <summary>Click to expand project layout</summary>
 ├── app/
+
 │   ├── src/
+
 │   │   ├── main/
+
 │   │   │   ├── java/… (Java files)
+
 │   │   │   └── res/… (layouts, drawables, etc.)
+
 │   └── build.gradle
+
 ├── … (other modules)
+
 └── README.md
 </details>
 
@@ -99,21 +106,18 @@ Make sure you have:
 
 1. Fork the repository
 2. Create a new branch:
-3. 
+3. copy code
 ```bash
-copy code
 git checkout -b feature/YourFeature
 ```
-4. Make your changes and commit:
-
-```bash
+4. Make your changes and commit
 Copy code
+```bash
 git commit -m "Add feature"
 ```
 5. Push to your branch:
-
-```bash
 Copy code
+```bash
 git push origin feature/YourFeature
 ```
 6. Open a Pull Request (PR) describing your changes
