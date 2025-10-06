@@ -30,22 +30,21 @@ A simple ToDo application built for Android to help you manage tasks.
 ---
 
 ## Screenshots
-  
-> ```md
-> ![Main Screen](<img src="https://github.com/UraniumUtkarsh/Android_ToDo_App/blob/main/Github_app_img_ss/img1.jpg" width="300"/>)
-> ![Add Task](<img src="https://github.com/UraniumUtkarsh/Android_ToDo_App/blob/main/Github_app_img_ss/img2.jpg" width="300"/>)
-> ```
+
+<div align="center">
+  <img src="https://github.com/UraniumUtkarsh/Android_ToDo_App/blob/main/Github_app_img_ss/img1.jpg" width="300" alt="Main Screen"/>
+  <img src="https://github.com/UraniumUtkarsh/Android_ToDo_App/blob/main/Github_app_img_ss/img2.jpg" width="300" alt="Add Task"/>
+</div>
 
 ---
 
 ## Tech Stack
 
-| Component | Technology / Library |
-|-----------|----------------------|
-| Language  | Kotlin     /   Java  |
-| UI        | Android XML          |
-| Storage   | SQLite               |
-|___________|______________________|
+| Component  | Technology / Library |
+|-------------|----------------------|
+| Language    | Kotlin / Java        |
+| UI          | Android XML          |
+| Storage     | SQLite               |
 
 ---
 
@@ -82,7 +81,8 @@ Make sure you have:
 ---
 
 ### Project Structure
-
+<details>
+<summary>Click to expand project layout</summary>
 ├── app/
 │   ├── src/
 │   │   ├── main/
