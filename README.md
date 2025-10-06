@@ -91,6 +91,9 @@ Make sure you have:
 │   └── build.gradle
 ├── … (other modules)
 └── README.md
+</details>
+
+---
 
 ### Contributions are welcome! Here’s how you can help:
 
